@@ -179,6 +179,39 @@ Two 15P 1.0 mm MIPI connectors on the back are Raspberry Pi cable compatible; th
 | Mounting pitch  | 66.16 × 46.15 mm (±0.3 mm)        |
 | Mounting holes  | 4 × M3                            |
 
+### PoE Ethernet Adapter
+
+An optional 10/100BASE-TX Ethernet + PoE adapter board (V1.2). It plugs onto the dev board headers via a
+2×13P 2.54 mm female header, giving the ESP32-P4 RMII wired networking and letting a PoE switch power the
+board over the network cable.
+
+<p align="center"><img alt="PoE Ethernet adapter 3D render" src="./images/poe-adapter.png" width="600" /></p>
+
+| Item          | Specification                                                              |
+| ------------- | -------------------------------------------------------------------------- |
+| Ethernet PHY  | IP101GRI, 10/100BASE-TX, RMII, 25 MHz crystal                              |
+| Port          | RJ45 with Link / Speed LEDs                                                |
+| PoE PD        | TPS2378 (IEEE 802.3af PD) + XC7010 isolated flyback, +5 V out to the board |
+| PHY Power     | XC6206 LDO, +5 V → 3.3 V                                                   |
+| Board Size    | 72.00 × 52.00 mm, 4 mounting holes matching the dev board                  |
+| Connector     | 2×13P 2.54 mm female header                                                |
+
+RMII pin mapping (ESP32-P4 GPIO):
+
+| Signal   | GPIO | Signal  | GPIO | Signal     | GPIO |
+| -------- | ---- | ------- | ---- | ---------- | ---- |
+| RXD0     | 52   | TXD0    | 34   | 50M_CLK    | 50   |
+| RXD1     | 47   | TXD1    | 35   | MDC        | 53   |
+| CRS_DV   | 51   | TX_EN   | 33   | MDIO       | 49   |
+|          |      |         |      | PHY_RESET  | 36   |
+
+<p align="center"><img alt="PoE Ethernet adapter dimensions" src="./images/poe-adapter-dimensions.png" width="600" /></p>
+
+| File | Description |
+| ---- | ----------- |
+| [PoE Ethernet adapter schematic V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_Schematic_V1.2.pdf) | Schematic PDF |
+| [PoE Ethernet adapter STEP V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_V1.2.step) | PCBA 3D model |
+
 ### Schematic
 
 <p align="center"><img alt="ESP32-P4C6-Module Dev Board schematic" src="./images/schematic.png" width="900" /></p>
@@ -257,7 +290,7 @@ Steps:
 devboard-esp32p4c6_module/
 ├── README.md          # Product documentation (Chinese)
 ├── README_EN.md       # Product documentation (English, this file)
-├── docs/              # user guides, schematics, camera/antenna PDFs
+├── docs/              # user guides, schematics, PoE adapter, camera/antenna files
 ├── firmware/          # C6 wireless co-processor firmware (ESP-Hosted, flash C6 @ 0x0)
 └── images/            # Images used in README & docs
 ```
@@ -272,6 +305,8 @@ devboard-esp32p4c6_module/
 - [ESP32-P4C6-Module 使用指南 (CN, includes schematic)](./docs/ESP32-P4C6-Module_UserGuide_CN_20260910.pdf)
 - [ESP32-P4C6-Module Product Manual (CN)](./docs/ESP32-P4C6-Module_Manual_CN.pdf)
 - [ESP32-P4C6-Module carrier schematic V1.3](./docs/ESP32-P4C6-Module_Schematic_V1.3.pdf)
+- [PoE Ethernet adapter schematic V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_Schematic_V1.2.pdf)
+- [PoE Ethernet adapter STEP V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_V1.2.step)
 - [C6 wireless co-processor firmware, ESP-Hosted v2.12.9 (C6 only, `0x0`)](./firmware/ESP32-C6_ESP-Hosted_v2.12.9_merged_0x0.bin)
 
 ### Companion Peripherals
