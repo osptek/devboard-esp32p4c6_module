@@ -216,13 +216,14 @@ RMII pin mapping (ESP32-P4 GPIO):
 
 <p align="center"><img alt="ESP32-P4C6-Module Dev Board schematic" src="./images/schematic.png" width="900" /></p>
 
-Full schematic PDF: [docs/ESP32-P4C6-Module_Schematic_V1.3.pdf](./docs/ESP32-P4C6-Module_Schematic_V1.3.pdf) (carrier compatible with P4C5 / P4C6 modules).
+Full schematic PDF: [docs/ESP32-P4C6-Module_Schematic_V1.5.pdf](./docs/ESP32-P4C6-Module_Schematic_V1.5.pdf) (carrier compatible with P4C5 / P4C6 modules).
 
 ### Hardware Revisions
 
 | Date     | Rev  | Notes                                              |
 | -------- | ---- | -------------------------------------------------- |
 | 20251010 | V1.0 | Initial release (silkscreen: OspreyPi-P4C6-Module) |
+| 20260901 | V1.5 | Added configurable 0 Ω C5/C6 BOOT-selection links |
 
 ---
 
@@ -304,7 +305,7 @@ devboard-esp32p4c6_module/
 - [ESP32-P4C6-Module User Guide (EN)](./docs/ESP32-P4C6-Module_UserGuide_EN_20260910.pdf)
 - [ESP32-P4C6-Module 使用指南 (CN, includes schematic)](./docs/ESP32-P4C6-Module_UserGuide_CN_20260910.pdf)
 - [ESP32-P4C6-Module Product Manual (CN)](./docs/ESP32-P4C6-Module_Manual_CN.pdf)
-- [ESP32-P4C6-Module carrier schematic V1.3](./docs/ESP32-P4C6-Module_Schematic_V1.3.pdf)
+- [ESP32-P4C6-Module carrier schematic V1.5](./docs/ESP32-P4C6-Module_Schematic_V1.5.pdf)
 - [PoE Ethernet adapter schematic V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_Schematic_V1.2.pdf)
 - [PoE Ethernet adapter STEP V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_V1.2.step)
 - [C6 wireless co-processor firmware, ESP-Hosted v2.12.9 (C6 only, `0x0`)](./firmware/ESP32-C6_ESP-Hosted_v2.12.9_merged_0x0.bin)

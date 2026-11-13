@@ -214,13 +214,14 @@ RMII 引脚分配（ESP32-P4 GPIO）：
 
 <p align="center"><img alt="ESP32-P4C6-Module 开发板原理图" src="./images/schematic.png" width="900" /></p>
 
-完整原理图 PDF 见 [docs/ESP32-P4C6-Module_Schematic_V1.3.pdf](./docs/ESP32-P4C6-Module_Schematic_V1.3.pdf)（底板兼容 P4C5 / P4C6 模组）。
+完整原理图 PDF 见 [docs/ESP32-P4C6-Module_Schematic_V1.5.pdf](./docs/ESP32-P4C6-Module_Schematic_V1.5.pdf)（底板兼容 P4C5 / P4C6 模组）。
 
 ### 硬件版本
 
 | 日期     | 版本 | 更改内容 |
 | -------- | ---- | -------- |
 | 20251010 | V1.0 | 初始发布（丝印：OspreyPi-P4C6-Module） |
+| 20260901 | V1.5 | 增加 C5/C6 BOOT 选择跳线（0 Ω 可配置）  |
 
 ---
 
@@ -303,7 +304,7 @@ devboard-esp32p4c6_module/
 - [ESP32-P4C6-Module 使用指南（中文，含原理图）](./docs/ESP32-P4C6-Module_UserGuide_CN_20260910.pdf)
 - [ESP32-P4C6-Module User Guide（英文）](./docs/ESP32-P4C6-Module_UserGuide_EN_20260910.pdf)
 - [ESP32-P4C6-Module 产品说明书（中文）](./docs/ESP32-P4C6-Module_Manual_CN.pdf)
-- [ESP32-P4C6-Module 底板原理图 V1.3](./docs/ESP32-P4C6-Module_Schematic_V1.3.pdf)
+- [ESP32-P4C6-Module 底板原理图 V1.5](./docs/ESP32-P4C6-Module_Schematic_V1.5.pdf)
 - [PoE 以太网转接板原理图 V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_Schematic_V1.2.pdf)
 - [PoE 以太网转接板 STEP V1.2](./docs/ESP32-P4C6-Module_PoE-Ethernet-Adapter_V1.2.step)
 - [C6 无线协处理器固件 ESP-Hosted v2.12.9（仅烧 C6 · `0x0`）](./firmware/ESP32-C6_ESP-Hosted_v2.12.9_merged_0x0.bin)
